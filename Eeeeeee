@@ -1,0 +1,300 @@
+
+
+local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Orion/main/source"))()
+local Window = OrionLib:MakeWindow({Name = "Micro Hub 1.0.1b | Private", HidePremium = true, IntroText = "Micro hub Beta", SaveConfig = true, ConfigFolder = "Micropriv"})
+
+local CombatTab = Window:MakeTab({
+	Name = "Combat",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = CombatTab:AddSection({
+	Name = "things"
+})
+
+CombatTab:AddToggle({
+	Name = "MeteorTexture",
+	Default = false,
+	Callback = function(Value)
+    local obj = game:GetObjects("rbxassetid://11144793662")[1]
+    obj.Name = "Part"
+    local connection
+    connection = game:GetService("ReplicatedStorage").ChildAdded:Connect(function(v)
+	 for i,x in pairs(obj:GetChildren()) do
+		 local c = x:Clone()
+		 c.Parent = v
+	    end
+	   connection:Disconnect()
+        end)
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/ExanlesLuashit/Vape-CustomModules/main/Astral-Minecraft-TexturePack"))()			
+	end    
+})
+
+
+for i, v in pairs(game.Players:GetPlayers()) do
+if v.Name == "ac_doesntexist" then
+
+local Players = game:GetService("Players")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local yes = v.Name
+local ChatTag = {}
+ChatTag[yes] =
+	{
+        TagText = "Furry",
+        TagColor = Color3.new(1, 0.3, 0.3),
+    }
+
+
+
+    local oldchanneltab
+    local oldchannelfunc
+    local oldchanneltabs = {}
+
+--// Chat Listener
+for i, v in pairs(getconnections(ReplicatedStorage.DefaultChatSystemChatEvents.OnNewMessage.OnClientEvent)) do
+	if
+		v.Function
+		and #debug.getupvalues(v.Function) > 0
+		and type(debug.getupvalues(v.Function)[1]) == "table"
+		and getmetatable(debug.getupvalues(v.Function)[1])
+		and getmetatable(debug.getupvalues(v.Function)[1]).GetChannel
+	then
+		oldchanneltab = getmetatable(debug.getupvalues(v.Function)[1])
+		oldchannelfunc = getmetatable(debug.getupvalues(v.Function)[1]).GetChannel
+		getmetatable(debug.getupvalues(v.Function)[1]).GetChannel = function(Self, Name)
+			local tab = oldchannelfunc(Self, Name)
+			if tab and tab.AddMessageToChannel then
+				local addmessage = tab.AddMessageToChannel
+				if oldchanneltabs[tab] == nil then
+					oldchanneltabs[tab] = tab.AddMessageToChannel
+				end
+				tab.AddMessageToChannel = function(Self2, MessageData)
+					if MessageData.FromSpeaker and Players[MessageData.FromSpeaker] then
+						if ChatTag[Players[MessageData.FromSpeaker].Name] then
+							MessageData.ExtraData = {
+								NameColor = Players[MessageData.FromSpeaker].Team == nil and Color3.new(135,206,235)
+									or Players[MessageData.FromSpeaker].TeamColor.Color,
+								Tags = {
+									table.unpack(MessageData.ExtraData.Tags),
+									{
+										TagColor = ChatTag[Players[MessageData.FromSpeaker].Name].TagColor,
+										TagText = ChatTag[Players[MessageData.FromSpeaker].Name].TagText,
+									},
+								},
+							}
+						end
+					end
+					return addmessage(Self2, MessageData)
+				end
+			end
+			return tab
+		end
+	end
+end
+end
+if v.Name == "YMikeOfficialYT" then
+
+local Players = game:GetService("Players")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local yes = v.Name
+local ChatTag = {}
+ChatTag[yes] =
+	{
+        TagText = "BLOCKED",
+        TagColor = Color3.new(1, 0.3, 0.3),
+    }
+
+
+
+    local oldchanneltab
+    local oldchannelfunc
+    local oldchanneltabs = {}
+
+--// Chat Listener
+for i, v in pairs(getconnections(ReplicatedStorage.DefaultChatSystemChatEvents.OnNewMessage.OnClientEvent)) do
+	if
+		v.Function
+		and #debug.getupvalues(v.Function) > 0
+		and type(debug.getupvalues(v.Function)[1]) == "table"
+		and getmetatable(debug.getupvalues(v.Function)[1])
+		and getmetatable(debug.getupvalues(v.Function)[1]).GetChannel
+	then
+		oldchanneltab = getmetatable(debug.getupvalues(v.Function)[1])
+		oldchannelfunc = getmetatable(debug.getupvalues(v.Function)[1]).GetChannel
+		getmetatable(debug.getupvalues(v.Function)[1]).GetChannel = function(Self, Name)
+			local tab = oldchannelfunc(Self, Name)
+			if tab and tab.AddMessageToChannel then
+				local addmessage = tab.AddMessageToChannel
+				if oldchanneltabs[tab] == nil then
+					oldchanneltabs[tab] = tab.AddMessageToChannel
+				end
+				tab.AddMessageToChannel = function(Self2, MessageData)
+					if MessageData.FromSpeaker and Players[MessageData.FromSpeaker] then
+						if ChatTag[Players[MessageData.FromSpeaker].Name] then
+							MessageData.ExtraData = {
+								NameColor = Players[MessageData.FromSpeaker].Team == nil and Color3.new(135,206,235)
+									or Players[MessageData.FromSpeaker].TeamColor.Color,
+								Tags = {
+									table.unpack(MessageData.ExtraData.Tags),
+									{
+										TagColor = ChatTag[Players[MessageData.FromSpeaker].Name].TagColor,
+										TagText = ChatTag[Players[MessageData.FromSpeaker].Name].TagText,
+									},
+								},
+							}
+						end
+					end
+					return addmessage(Self2, MessageData)
+				end
+			end
+			return tab
+		end
+	end
+end
+end
+if v.Name == "abnormalhack34" then
+ 
+    
+local Players = game:GetService("Players")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local yes = v.Name
+local ChatTag = {}
+ChatTag[yes] =
+	{
+        TagText = "MICRO OWNER / VAPE PRIV",
+        TagColor = Color3.new(1, 0.3, 0.3),
+    }
+
+
+
+
+    local oldchanneltab
+    local oldchannelfunc
+    local oldchanneltabs = {}
+
+--// Chat Listener
+for i, v in pairs(getconnections(ReplicatedStorage.DefaultChatSystemChatEvents.OnNewMessage.OnClientEvent)) do
+	if
+		v.Function
+		and #debug.getupvalues(v.Function) > 0
+		and type(debug.getupvalues(v.Function)[1]) == "table"
+		and getmetatable(debug.getupvalues(v.Function)[1])
+		and getmetatable(debug.getupvalues(v.Function)[1]).GetChannel
+	then
+		oldchanneltab = getmetatable(debug.getupvalues(v.Function)[1])
+		oldchannelfunc = getmetatable(debug.getupvalues(v.Function)[1]).GetChannel
+		getmetatable(debug.getupvalues(v.Function)[1]).GetChannel = function(Self, Name)
+			local tab = oldchannelfunc(Self, Name)
+			if tab and tab.AddMessageToChannel then
+				local addmessage = tab.AddMessageToChannel
+				if oldchanneltabs[tab] == nil then
+					oldchanneltabs[tab] = tab.AddMessageToChannel
+				end
+				tab.AddMessageToChannel = function(Self2, MessageData)
+					if MessageData.FromSpeaker and Players[MessageData.FromSpeaker] then
+						if ChatTag[Players[MessageData.FromSpeaker].Name] then
+							MessageData.ExtraData = {
+								NameColor = Players[MessageData.FromSpeaker].Team == nil and Color3.new(135,206,235)
+									or Players[MessageData.FromSpeaker].TeamColor.Color,
+								Tags = {
+									table.unpack(MessageData.ExtraData.Tags),
+									{
+										TagColor = ChatTag[Players[MessageData.FromSpeaker].Name].TagColor,
+										TagText = ChatTag[Players[MessageData.FromSpeaker].Name].TagText,
+									},
+								},
+							}
+						end
+					end
+					return addmessage(Self2, MessageData)
+				end
+			end
+			return tab
+		end
+	end
+end
+end
+if v.Name == "Goldenlegend2022" then
+ 
+    
+local Players = game:GetService("Players")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local yes = v.Name
+local ChatTag = {}
+ChatTag[yes] =
+	{
+        TagText = "VAPE OWNER",
+        TagColor = Color3.new(28, 0, 28),
+    }
+
+
+
+    local oldchanneltab
+    local oldchannelfunc
+    local oldchanneltabs = {}
+
+--// Chat Listener
+for i, v in pairs(getconnections(ReplicatedStorage.DefaultChatSystemChatEvents.OnNewMessage.OnClientEvent)) do
+	if
+		v.Function
+		and #debug.getupvalues(v.Function) > 0
+		and type(debug.getupvalues(v.Function)[1]) == "table"
+		and getmetatable(debug.getupvalues(v.Function)[1])
+		and getmetatable(debug.getupvalues(v.Function)[1]).GetChannel
+	then
+		oldchanneltab = getmetatable(debug.getupvalues(v.Function)[1])
+		oldchannelfunc = getmetatable(debug.getupvalues(v.Function)[1]).GetChannel
+		getmetatable(debug.getupvalues(v.Function)[1]).GetChannel = function(Self, Name)
+			local tab = oldchannelfunc(Self, Name)
+			if tab and tab.AddMessageToChannel then
+				local addmessage = tab.AddMessageToChannel
+				if oldchanneltabs[tab] == nil then
+					oldchanneltabs[tab] = tab.AddMessageToChannel
+				end
+				tab.AddMessageToChannel = function(Self2, MessageData)
+					if MessageData.FromSpeaker and Players[MessageData.FromSpeaker] then
+						if ChatTag[Players[MessageData.FromSpeaker].Name] then
+							MessageData.ExtraData = {
+								NameColor = Players[MessageData.FromSpeaker].Team == nil and Color3.new(135,206,235)
+									or Players[MessageData.FromSpeaker].TeamColor.Color,
+								Tags = {
+									table.unpack(MessageData.ExtraData.Tags),
+									{
+										TagColor = ChatTag[Players[MessageData.FromSpeaker].Name].TagColor,
+										TagText = ChatTag[Players[MessageData.FromSpeaker].Name].TagText,
+									},
+								},
+							}
+						end
+					end
+					return addmessage(Self2, MessageData)
+				end
+			end
+			return tab
+		end
+	end
+end
+end
+end
+
+
+
+
+
+
+--IMPORTANT IF UR GONNA CHANGE THIS U MIGHT GET BLACKLISTED EVEN IF UR AN DEV IF U DONT HAVE PERMISSIONS TO DO IT--
+
+local lplr = game.Players.LocalPlayer
+
+
+
+if lplr.UserId == "3890122976" then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Nebulaprivatewhitelistbypass/Recreate/main/HahaWood", true))()
+elseif lplr.UserId == "4085911762" then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Nebulaprivatewhitelistbypass/Recreate/main/HahaWood", true))()
+elseif lplr.UserId == "3898689350" then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Nebulaprivatewhitelistbypass/Recreate/main/HahaWood", true))()
+else
+	
+end
