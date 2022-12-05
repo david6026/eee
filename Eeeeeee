@@ -27,7 +27,7 @@ CombatTab:AddToggle({
 	    end
 	   connection:Disconnect()
         end)
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/ExanlesLuashit/Vape-CustomModules/main/Astral-Minecraft-TexturePack"))()			
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Nebulaprivatewhitelistbypass/cw/main/texturepack"))()			
 	end    
 })
 
