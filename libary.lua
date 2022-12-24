@@ -20,6 +20,7 @@ local UIListLayout_5 = Instance.new("UIListLayout")
 Main.Name = "Main"
 Main.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 Main.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Main.ResetOnSpawn = false
 
 Onyx.Name = "Onyx"
 Onyx.Parent = Main
@@ -28,6 +29,7 @@ Onyx.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Onyx.Position = UDim2.new(0.332582593, 0, 0.120987654, 0)
 Onyx.Size = UDim2.new(0, 576, 0, 550)
 Onyx.Style = Enum.FrameStyle.ChatRed
+Onyx.Draggable = true
 
 Tabs.Name = "Tabs"
 Tabs.Parent = Onyx
