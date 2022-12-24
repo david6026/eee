@@ -194,4 +194,4 @@ local function FMQLBQ_fake_script() -- Main.LocalScript
 		end
 	end)
 end
-coroutine.wrap(FMQLBQ_fake_script)()]
+coroutine.wrap(FMQLBQ_fake_script)()
