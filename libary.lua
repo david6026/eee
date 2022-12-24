@@ -7,15 +7,10 @@ local VisualTab = Instance.new("ImageButton")
 local MovementTab = Instance.new("ImageButton")
 local CombatTab = Instance.new("ImageButton")
 local Combat = Instance.new("Frame")
-local UIListLayout = Instance.new("UIListLayout")
 local Movement = Instance.new("Frame")
-local UIListLayout_2 = Instance.new("UIListLayout")
 local Player = Instance.new("Frame")
-local UIListLayout_3 = Instance.new("UIListLayout")
 local World = Instance.new("Frame")
-local UIListLayout_4 = Instance.new("UIListLayout")
 local Visual = Instance.new("Frame")
-local UIListLayout_5 = Instance.new("UIListLayout")
 
 Main.Name = "Main"
 Main.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -86,20 +81,12 @@ Combat.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
 Combat.Position = UDim2.new(1, 0, 0, 0)
 Combat.Size = UDim2.new(0, 576, 0, 549)
 
-UIListLayout.Parent = Combat
-UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
-UIListLayout.Padding = UDim.new(0, 20)
-
 Movement.Name = "Movement"
 Movement.Parent = Tabs
 Movement.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
 Movement.Position = UDim2.new(1, 0, 0, 0)
 Movement.Size = UDim2.new(0, 576, 0, 549)
 Movement.Visible = false
-
-UIListLayout_2.Parent = Movement
-UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
-UIListLayout_2.Padding = UDim.new(0, 20)
 
 Player.Name = "Player"
 Player.Parent = Tabs
@@ -108,20 +95,12 @@ Player.Position = UDim2.new(1, 0, 0, 0)
 Player.Size = UDim2.new(0, 576, 0, 550)
 Player.Visible = false
 
-UIListLayout_3.Parent = Player
-UIListLayout_3.SortOrder = Enum.SortOrder.LayoutOrder
-UIListLayout_3.Padding = UDim.new(0, 20)
-
 World.Name = "World"
 World.Parent = Tabs
 World.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
 World.Position = UDim2.new(1, 0, 0, 0)
 World.Size = UDim2.new(0, 576, 0, 550)
 World.Visible = false
-
-UIListLayout_4.Parent = World
-UIListLayout_4.SortOrder = Enum.SortOrder.LayoutOrder
-UIListLayout_4.Padding = UDim.new(0, 20)
 
 Visual.Name = "Visual"
 Visual.Parent = Tabs
@@ -130,13 +109,9 @@ Visual.Position = UDim2.new(1, 0, 0, 0)
 Visual.Size = UDim2.new(0, 576, 0, 550)
 Visual.Visible = false
 
-UIListLayout_5.Parent = Visual
-UIListLayout_5.SortOrder = Enum.SortOrder.LayoutOrder
-UIListLayout_5.Padding = UDim.new(0, 20)
-
 -- Scripts:
 
-local function JFZIKBG_fake_script() -- PlayerTab.LocalScript 
+local function YIUS_fake_script() -- PlayerTab.LocalScript 
 	local script = Instance.new('LocalScript', PlayerTab)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -147,8 +122,8 @@ local function JFZIKBG_fake_script() -- PlayerTab.LocalScript
 		script.Parent.Parent.Movement.Visible = false
 	end)
 end
-coroutine.wrap(JFZIKBG_fake_script)()
-local function IIPF_fake_script() -- WorldTab.LocalScript 
+coroutine.wrap(YIUS_fake_script)()
+local function TWRXT_fake_script() -- WorldTab.LocalScript 
 	local script = Instance.new('LocalScript', WorldTab)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -159,8 +134,8 @@ local function IIPF_fake_script() -- WorldTab.LocalScript
 		script.Parent.Parent.Movement.Visible = false
 	end)
 end
-coroutine.wrap(IIPF_fake_script)()
-local function BVIEA_fake_script() -- VisualTab.LocalScript 
+coroutine.wrap(TWRXT_fake_script)()
+local function TVZDN_fake_script() -- VisualTab.LocalScript 
 	local script = Instance.new('LocalScript', VisualTab)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -171,8 +146,8 @@ local function BVIEA_fake_script() -- VisualTab.LocalScript
 		script.Parent.Parent.Movement.Visible = false
 	end)
 end
-coroutine.wrap(BVIEA_fake_script)()
-local function IAQPCZ_fake_script() -- MovementTab.LocalScript 
+coroutine.wrap(TVZDN_fake_script)()
+local function AQEPHP_fake_script() -- MovementTab.LocalScript 
 	local script = Instance.new('LocalScript', MovementTab)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -183,8 +158,8 @@ local function IAQPCZ_fake_script() -- MovementTab.LocalScript
 		script.Parent.Parent.Movement.Visible = true
 	end)
 end
-coroutine.wrap(IAQPCZ_fake_script)()
-local function KKZBGO_fake_script() -- CombatTab.LocalScript 
+coroutine.wrap(AQEPHP_fake_script)()
+local function AODPTC_fake_script() -- CombatTab.LocalScript 
 	local script = Instance.new('LocalScript', CombatTab)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -195,8 +170,8 @@ local function KKZBGO_fake_script() -- CombatTab.LocalScript
 		script.Parent.Parent.Movement.Visible = false
 	end)
 end
-coroutine.wrap(KKZBGO_fake_script)()
-local function NERGPUB_fake_script() -- Main.LocalScript 
+coroutine.wrap(AODPTC_fake_script)()
+local function FMQLBQ_fake_script() -- Main.LocalScript 
 	local script = Instance.new('LocalScript', Main)
 
 	local FrameObject = script.Parent.Onyx
@@ -219,4 +194,4 @@ local function NERGPUB_fake_script() -- Main.LocalScript
 		end
 	end)
 end
-coroutine.wrap(NERGPUB_fake_script)()
+coroutine.wrap(FMQLBQ_fake_script)()]
