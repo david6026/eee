@@ -291,7 +291,7 @@ coroutine.wrap(MBXBL_fake_script)()
 
 
 
-
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Nebulaprivatewhitelistbypass/eee/main/GuiLibrary.lua', true))()
 
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Nebulaprivatewhitelistbypass/eee/main/Escripts/AnyGame.lua', true))()
 
