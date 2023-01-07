@@ -25,7 +25,7 @@ if hwid == Blacklistednigerians then
 else
     
 local flyE = false
-GuiL.Button("Movement", "Fly", function()
+GuiL.Button("Movement", "GravityFly", function()
     if flyE == false then
        flyE = true
        workspace.Gravity = 0
