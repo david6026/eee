@@ -21,7 +21,7 @@ end
 ]]--
   
 if hwid == Blacklistednigerians then
-    lplr:Kick("Ur an blacklisted nigerian get outa here")
+    lplr:Kick("Your Blacklisted From Cola, Have a good day.")
 else
     
 local flyE = false
