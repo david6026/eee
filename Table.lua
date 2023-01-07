@@ -3,3 +3,4 @@ local hwids = {
   "here",
   "so it goes on"
 }
+return hwids
