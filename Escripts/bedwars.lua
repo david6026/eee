@@ -1,3 +1,4 @@
+local GuiL = shared.CoGuiLibrary
 
   --[[
   examples:
