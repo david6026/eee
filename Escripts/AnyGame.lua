@@ -20,7 +20,7 @@ end
   end)
 ]]--
   
-if hwid == Blacklistednigerians then
+if hwid == Blacklisted then
     lplr:Kick("Your Blacklisted From Cola, Have a good day.")
 else
     
