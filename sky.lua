@@ -179,7 +179,7 @@ runcode(function()
             {CFrame = CFrame.new(0, 0, 0) * CFrame.Angles(math.rad(220), math.rad(100), math.rad(100)),Time = 0.25},
             {CFrame = CFrame.new(0, 0, 0) * CFrame.Angles(math.rad(0), math.rad(0), math.rad(0)), Time = 0.25}
         },
-        ["Assandweird"] = {
+        ["Weird"] = {
             {CFrame = CFrame.new(0.4, 1.1, 0.8) * CFrame.Angles(math.rad(0), math.rad(0), math.rad(0)),Time = 0.25},
             {CFrame = CFrame.new(0, -0.9, -1.5) * CFrame.Angles(math.rad(0), math.rad(0), math.rad(0)),Time = 0.25},
             {CFrame = CFrame.new(0, 0, 0) * CFrame.Angles(math.rad(0), math.rad(0), math.rad(0)), Time = 0.25}
