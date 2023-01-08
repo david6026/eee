@@ -29,7 +29,7 @@ function getremote(tab)
     return ""
 end
 
--- this is credits to vape for killaura tho 
+--this is credits to vape for killaura tho 
 
 local bedwars = {
     ["Projectile"] = Client:Get(getremote(debug.getconstants(debug.getupvalues(getmetatable(KnitClient.Controllers.ProjectileController)["launchProjectileWithValues"])[2]))),
