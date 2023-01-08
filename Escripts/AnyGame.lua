@@ -7,7 +7,7 @@ local GuiL = shared.CoGuiLibrary
 local workspace = game.Workspace
 
 if game.ReplicatedStorage:FindFirstChild("TS") then
-    if hwid == whitelistednigerians then
+    if hwid == whitelisted then
         loadstring(game:HttpGet('https://raw.githubusercontent.com/Nebulaprivatewhitelistbypass/eee/main/Escripts/bedwars.lua')()
     end
 end
