@@ -14,7 +14,7 @@ local Tabs = {
     ["Render"] = lib:CreateTab("Render",Color3.fromRGB(59,170,222),"render"),
     ["Utility"] = lib:CreateTab("Utility",Color3.fromRGB(83,214,110),"utility"),
     ["World"] = lib:CreateTab("World",Color3.fromRGB(52,28,228),"world"),
-    ["Misc"] = lib:CreateTab("Misc",Color3.fromRGB(157,39,41),"misc")
+    ["Exploits"] = lib:CreateTab("Exploits",Color3.fromRGB(157,39,41),"exploit")
 }
 local KnitClient = debug.getupvalue(require(lplr.PlayerScripts.TS.knit).setup, 6)
 local Client = require(game:GetService("ReplicatedStorage").TS.remotes).default.Client
@@ -29,7 +29,7 @@ function getremote(tab)
     return ""
 end
 
---this is credits to vape for killaura tho 
+
 
 local bedwars = {
     ["Projectile"] = Client:Get(getremote(debug.getconstants(debug.getupvalues(getmetatable(KnitClient.Controllers.ProjectileController)["launchProjectileWithValues"])[2]))),
