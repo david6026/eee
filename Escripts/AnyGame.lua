@@ -1,5 +1,5 @@
-local whitelistednigerians = loadstring(game:HttpGet('https://raw.githubusercontent.com/Nebulaprivatewhitelistbypass/eee/main/Table.lua'))()
-local Blacklistednigerians = loadstring(game:HttpGet('https://raw.githubusercontent.com/Nebulaprivatewhitelistbypass/eee/main/OtherTable.lua'))()
+local whitelisted = loadstring(game:HttpGet('https://raw.githubusercontent.com/Nebulaprivatewhitelistbypass/eee/main/Table.lua'))()
+local Blacklisted = loadstring(game:HttpGet('https://raw.githubusercontent.com/Nebulaprivatewhitelistbypass/eee/main/OtherTable.lua'))()
 local hwid = game:GetService("RbxAnalyticsService"):GetClientId()
 local players = game:GetService("Players")
 local lplr = players.LocalPlayer
