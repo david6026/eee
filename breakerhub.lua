@@ -1,4 +1,3 @@
-
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("breaker hub (ninja legends) made by aa222", "DarkTheme")
 
@@ -113,6 +112,10 @@ end)
 
 Sectiong:NewKeybind("ui key", "e", Enum.KeyCode.LeftControl, function()
 	Library:ToggleUI()
+end)
+
+Sectiong:NewButton("UnInject", "uninject just", function()
+    Libary:DestroyUi()
 end)
 
     Section:NewButton("Unlock all islands", "Unlocks all islands", function()
